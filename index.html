@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Search Box -->
+    <div class="search-box">
+      <!-- Location Icon (clickable for GPS) -->
+      <i class="bx bx-current-location get-location" title="Get My Location"></i>
+      
+      <!-- Input for city -->
+      <input type="text" placeholder="Enter your location">
+      
+      <!-- Search button -->
+      <button class="bx bx-search"></button>
+    </div>
+
+    <!-- Hidden city -->
+    <p class="city-hide"></p>
+
+    <!-- Weather Box -->
+    <div class="weather-box">
+      <div class="box">
+        <div class="info-weather">
+          <div class="weather">
+            <img src="images/cloud.png" alt="Weather Icon">
+            <p class="temperature">0<span>°C</span></p>
+            <p class="description">Weather Description</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Weather Details -->
+    <div class="weather-details">
+      <div class="humidity">
+        <i class="bx bx-water"></i>
+        <div class="text">
+          <div class="info-humidity"><span>0%</span></div>
+          <p>Humidity</p>
+        </div>
+      </div>
+      
+      <div class="wind">
+        <i class="bx bx-wind"></i>
+        <div class="text">
+          <div class="info-wind"><span>0 km/h</span></div>
+          <p>Wind Speed</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error for wrong city -->
+    <div class="not-found">
+      <div class="box">
+        <img src="images/404.png" alt="Not Found">
+        <p>Oops! Location not found!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS File -->
+  <script src="script.js"></script>
+</body>
+</html>
